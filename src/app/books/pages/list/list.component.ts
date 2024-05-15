@@ -9,12 +9,6 @@ import { identifiers } from 'src/data/identifiers'
 })
 export class ListComponent implements OnInit {
 
-      //TO DO:  AGREGAR INTERFACES!
-      //HACER RESUMEN DE TODO LO QUE HECHO EN ANGULAR MATERIAL!
-      //OPCIONAL: AGREGAR AVATAR EN LA CARD, RESPECTO AL TEMA...
-      //PAGINADOR
-      //SNACKBAR
-
   constructor(private bookService:BooksService){}
 
   ngOnInit(): void {
@@ -64,9 +58,9 @@ export class ListComponent implements OnInit {
             this.library.push(finalBook)
           }
         });
-      }) 
+      })
     } , 2000);
-    
+
 
   }
 
@@ -74,6 +68,6 @@ export class ListComponent implements OnInit {
   public covers:any = []
   public library:any = []
 
- 
+
 
 }
