@@ -24,7 +24,7 @@ export class BooksService implements OnInit{
   }
 
 getImage(id: string): Observable<Blob> {
-   return this.http.get('https://archive.org/services/img/'+id, {responseType: "blob"});
+   return this.http.get('/https://archive.org/services/img/'+id, {responseType: "blob"});
 }
 
 }
