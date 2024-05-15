@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/https://archive.org/services/img/(.*)",
+      "source": "/archive.org/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },
