@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row mt-4 item">
+        <div *ngFor="let item of library" class="col-4">
+<mat-card class="example-card mb-2">  
+    <mat-card-header class="d-flex align-items-center">
+      <mat-card-title>{{item.title | title}}</mat-card-title>
+      <mat-card-subtitle>{{item.author}}</mat-card-subtitle>
+    </mat-card-header >
+    <img mat-card-image src="{{item.img}}" alt="Photo of a Shiba Inu">
+    <mat-card-content class="my-3">
+      <h1 class="text-center">
+       Edición del año <span id="bold">{{item.date}}</span> 
+      </h1>
+    </mat-card-content> 
+    <mat-card-actions class="d-flex justify-content-center align-items-center">
+      <button mat-button mat-raised-button color="primary"><a href="{{item.link}}">Ir a Internet Archive</a></button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</div> <!-- fin del row-->
+</div> <!-- fin del container-->

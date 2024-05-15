@@ -1,0 +1,38 @@
+
+h1, mat-card-title {
+    color: black;
+}
+mat-card-subtitle {
+    font-size: large;
+}
+/* Aquí le aplique que sea 90% del parent, o sea del div col, que a su vez hereda del div height. De esta manera son todas iguales de tamaño */
+
+mat-card {
+    height: 95%;
+}
+
+mat-card-header {
+    height: 15%;
+}
+
+mat-card img {
+    height: 60%;
+}
+
+mat-card:last-of-type {
+    margin-bottom: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+button {
+    padding: 7%;
+}
+
+#bold {
+    font-weight: bold;
+}

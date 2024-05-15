@@ -1,0 +1,18 @@
+<div class="p-2">
+<h2>Hemos encontrado: <span class="font-weight-bold">{{data.books[0] | title}} <span *ngIf="data.books.length > 0"> y {{data.books[1] | title}}</span></span> en nuestra biblioteca</h2>
+
+<div *ngIf="data.books.length !== 0" class="d-flex">
+<h2 >Puedes visitar el libro deseado dando click aquí</h2> <div class="itemIcon"><a href="https://archive.org/details/texts?query=title:{{data.books[0] | title}}"><mat-icon class="text__link">link</mat-icon></a>
+</div> 
+</div>
+
+<h2 *ngIf="data.books.length == 0">Lo sentimos, no hemos encontrado ningún resultado para tu búsqueda. </h2>
+
+<div class="d-flex">
+<p>Puedes ver un <span class="bold">resumen </span> de los libros disponibles en la biblioteca, click aquí</p> <mat-icon [routerLink]="'/books/list'">list</mat-icon> 
+</div>
+
+<div class="d-flex">
+<p>También puedes explorar los más de <span class="bold">40 millones de títulos </span> en diferentes idiomas disponibles en la web de Internet Archive haciendo click aquí  <a href="https://archive.org/details/texts"> <mat-icon>find_in_page</mat-icon></a></p> 
+</div>
+</div>

@@ -1,0 +1,38 @@
+mat-sidenav-container {
+  height: 100%;
+  background-color: transparent;
+  color: transparent;
+}
+
+.bg-img {
+  background-image: url("/assets/bg-img/books-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.example-sidenav {
+  width: 20%;
+  background-color: #3F51B5;
+}
+
+#toolbar {
+   top: 0;
+   position: sticky;
+   z-index: 10;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-mdc-list-base {
+  --mdc-list-list-item-label-text-color: white;
+  --mdc-list-list-item-supporting-text-color: white;
+  --mdc-list-list-item-leading-icon-color: white;
+}
+
+
+

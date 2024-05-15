@@ -1,0 +1,18 @@
+.categories {
+    color: black;
+}
+
+.category {
+    background-color: white;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.category h1 {
+    color: #3F51B5;
+    font-weight: bold;
+}
+
+.category p {
+    font-weight: bold;
+}
