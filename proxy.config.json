@@ -1,7 +1,0 @@
-{
-  "/archive.org": {
-    "target": "https://archive.org",
-    "secure": false,
-    "logLevel": "debug"
-  }
-}
