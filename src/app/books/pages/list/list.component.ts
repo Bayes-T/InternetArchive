@@ -43,7 +43,6 @@ export class ListComponent implements OnInit {
     setTimeout(() => {
       identifiers.forEach((id,i) => {
         const identifier = this.collection[i].id
-        console.log(identifier)
         this.covers.forEach( (element:any) => {
           if (element.id === identifier){
             const finalBook = {

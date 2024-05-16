@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map, tap } from 'rxjs';
 import { Book } from './interfaces/bookInterfaces';
 
 
@@ -24,7 +24,7 @@ export class BooksService implements OnInit{
   }
 
 getImage(id: string): Observable<Blob> {
-   return this.http.get('/https://api.archive.org/services/img/'+id, {responseType: "blob"});
+   return this.http.get('https://archive.org/services/img/'+id, {responseType: "blob"});
 }
 
 }
