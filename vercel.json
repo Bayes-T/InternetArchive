@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/.*",
+      "source": "/archive.org.*",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
